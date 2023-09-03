@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Greivin Rojas Contreras - Programacion Avanzada  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Scripts js -->
+    <script src="Js/jquery-3.7.0.min.js"></script>
+    <script src="js/popper.js_1.15.0_popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    
+    <title>Ventas Casas</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Casas Express R&R</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comprar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Alquilar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locales Comerciales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comerciantes/Agentes</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrusel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Img/Slider1.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Img/Slider2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Img/Slider3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Contenido Principal -->
+        <aside class="post">
+            <div class="post-1">
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="Img/post1.jpg" alt="Imagen de la tarjeta" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Residencial Montaña Verde</h5>
+                                    <p class="card-text"><small class="text-muted">Última actualización hace 8
+                                            meses</small></p>
+                                    <p class="card-text">Encantadora casa de 3 dormitorios y 2 baños en una tranquila
+                                        comunidad.
+                                        <br> Amplio patio trasero, cocina moderna y luminosa sala de estar. <br>
+                                        Perfecta para familias pequeñas.
+                                    </p>
+                                    <!-- Button trigger modal 1 Card 1 -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Ver detalles
+                                    </button>
+                                    <!-- Modal 1 Card 1-->
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Casa Acogedora en
+                                                        Heredia</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><b>Ubicación:</b> Heredia, Costa Rica.</p>
+                                                    <p><b>Descripción:</b> Residencial Montaña Verde es un   exclusivo
+                                                        desarrollo en las colinas de Heredia. Ofrece una combinación
+                                                        única de tranquilidad y comodidad urbana. Consta de lujosas
+                                                        casas de estilo contemporáneo rodeadas de exuberante vegetación.
+                                                        Las casas cuentan con amplias áreas sociales, jardines privados
+                                                        y acabados de alta calidad.
+                                                    </p>
+                                                    <p><b>Tamaño del Terreno:</b> 1000 m²</p>
+                                                    <p><b>Tamaño de la Casa:</b> 320 m²</p>
+                                                    <p><b>Precio de venta:</b> $680,000.</p>
+                                                    <p><b>Fecha de venta:</b> 28 de julio de 2023.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Button trigger modal 2  Card 1-->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal2">
+                                        Vendedor
+                                    </button>
+                                    <!-- Modal 2 Card 1-->
+                                    <div class="modal fade" id="modal2" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Vendedor</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><b>Nombre:</b> Isabella Rivera.</p>
+                                                    <p><b>Experiencia:</b> 10 años en bienes raíces.</p>
+                                                    <p><b>Especialización:</b> Propiedades residenciales en zonas suburbanas.</p>
+                                                    <p><b>Características destacadas:</b> Conocida por su enfoque personalizado y su habilidad para encontrar la casa perfecta para cada cliente.</p>
+                                                    <p><b>Contacto:</b> +(506) 123-4567</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <!-- Button trigger modal 3 Card 1 -->
+                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                     data-bs-target="#modal3">
+                                     Comprar
+                                 </button>
+                                 <!-- Modal 3 Card 1-->
+                                 <div class="modal fade" id="modal3" data-bs-backdrop="static"
+                                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                     aria-hidden="true">
+                                     <div class="modal-dialog">
+                                         <div class="modal-content">
+                                             <div class="modal-header">
+                                                 <h5 class="modal-title" id="staticBackdropLabel">Comprar Propiedad</h5>
+                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                     aria-label="Close"></button>
+                                             </div>
+                                             <div class="modal-body">
+                                                <div class="row">
+                                                    <form action="" id="miFormulario">
+                                                    <label for="direccion" class="form-label">Datos Personales:</label>
+                                                    <div class="col">
+                                                      <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="nombre" name="nombre">
+                                                    </div>
+                                                    <div class="col">
+                                                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="apellido" name="apellido">
+                                                    </div>
+                                                    <div class="row">
+                                                        <input type="email" class="form-control" placeholder="email@example.com" aria-label="Last name" id="email" name="email">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="direccion" class="form-label">Dirección</label>
+                                                        <textarea class="form-control" id="direccion" name="direccion" rows="3" required id="direccion" name="direccion"></textarea>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="producto" class="form-label">Producto</label>
+                                                        <select class="form-select" id="producto" name="producto" required>
+                                                            <option value="" selected>Seleccionar producto...</option>
+                                                            <option value="casa">Casa</option>
+                                                            <option value="apartamento">Apartamento</option>
+                                                            <option value="terreno">Terreno</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="numero-tarjeta" class="form-label">Número de Tarjeta</label>
+                                                        <input type="text" class="form-control" id="numero-tarjeta" pattern="[0-9]{16}" required>
+                                                        <small class="form-text text-muted">Número ficticio: 1234 5678 9012 3456</small>
+                                                      </div>
+                                                      <div class="mb-3">
+                                                        <label for="caducidad" class="form-label">Fecha de Caducidad</label>
+                                                        <input type="month" class="form-control" id="caducidad" required>
+                                                      </div>
+                                                      <div class="mb-3">
+                                                        <label for="cvv" class="form-label">CVV</label>
+                                                        <input type="text" class="form-control" id="cvv" pattern="[0-9]{3}" required>
+                                                      </div>
+                                                      <button type="submit" class="btn btn-primary">Realizar Compra</button>
+                                                    </form>
+                                                     
+                                                    
+                                                  </div>
+                                             </div>
+                                             <div class="modal-footer">
+                                                 <button type="button" class="btn btn-secondary"
+                                                     data-bs-dismiss="modal">Close</button>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-2">
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="Img/post2.jpg" alt="Imagen de la tarjeta" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Casa Elegante en Escazu</h5>
+                                    <p class="card-text"><small class="text-muted">Última actualización hace 1
+                                        mes</small>
+                                    <p class="card-text">Impresionante casa de 4 dormitorios y 3.5 baños con vistas
+                                        panorámicas a la ciudad.<br> Acabados de lujo, piscina privada, amplio garaje y
+                                        jardín meticulosamente cuidado.</p>
+                                   </p>
+                                   <!-- Button trigger modal 2.1 Card 1 -->
+                                   <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                   data-bs-target="#modal4">
+                                   Ver detalles</button>
+
+                                     <!-- Modal 2.1 Card 1-->
+                                     <div class="modal fade" id="modal4" data-bs-backdrop="static"
+                                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                     aria-hidden="true">
+                                     <div class="modal-dialog">
+                                         <div class="modal-content">
+                                             <div class="modal-header">
+                                                 <h5 class="modal-title" id="staticBackdropLabel">Casa Elegante en Escazú</h5>
+                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                     aria-label="Close"></button>
+                                             </div>
+                                             <div class="modal-body">
+                                                 <p><b>Ubicación:</b> Condominio Brisas del Valle, Escazú, Costa Rica.</p>
+                                                 <p><b>Descripción:</b> Encantadora casa de estilo colonial ubicada en medio de exuberantes paisajes naturales. Disfruta de la privacidad y tranquilidad que ofrece esta propiedad en la cima de una colina. Amplios espacios interiores con detalles artesanales y acabados en madera. Cocina equipada con electrodomésticos modernos. Terraza con vista panorámica al valle. Senderos naturales en el terreno para explorar la belleza circundante.</p>
+                                                 <p><b>Tamaño del Terreno:</b> 1200 m²</p>
+                                                 <p><b>Tamaño de la Casa:</b> 520 m²</p>
+                                                 <p><b>Precio de venta:</b> $980,000.</p>
+                                                 <p><b>Fecha de venta:</b> 28 de septiembre de 2022.</p>
+                                             </div>
+                                             <div class="modal-footer">
+                                                 <button type="button" class="btn btn-secondary"
+                                                     data-bs-dismiss="modal">Close</button>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 
+                                 <!-- Codigo del modal descripcion del vendedor -->
+                                  <!-- Button trigger modal 2  Card 1-->
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                  data-bs-target="#modal5">
+                                  Vendedor
+                              </button>
+                              <!-- Modal 2 Card 1-->
+                              <div class="modal fade" id="modal5" data-bs-backdrop="static"
+                                  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                  aria-hidden="true">
+                                  <div class="modal-dialog">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <h5 class="modal-title" id="staticBackdropLabel">Vendedor</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                  aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                              <p><b>Nombre:</b> Maxwell Anderson.</p>
+                                              <p><b>Experiencia:</b> 5 años en bienes raíces.</p>
+                                              <p><b>Especialización:</b> Propiedades de lujo y casas de alto valor.</p>
+                                              <p><b>Características destacadas:</b> Experto en negociaciones y en cerrar acuerdos satisfactorios para compradores y vendedores.</p>
+                                              <p><b>Contacto:</b> +(506) 231-6750</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary"
+                                                  data-bs-dismiss="modal">Close</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <!-- Modal de compra post-2 -->
+                                <!-- Button trigger modal 3 Card 1 -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modal6">
+                                Comprar
+                            </button>
+                            <!-- Modal 3 Card 1-->
+                            <div class="modal fade" id="modal6" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Comprar Propiedad</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                           <div class="row">
+                                               <label for="direccion" class="form-label">Datos Personales:</label>
+                                               <div class="col">
+                                                 <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                               </div>
+                                               <div class="col">
+                                                 <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                               </div>
+                                               <div class="row">
+                                                   <input type="email" class="form-control" placeholder="email@example.com" aria-label="Last name">
+                                               </div>
+                                               <div class="mb-3">
+                                                   <label for="direccion" class="form-label">Dirección</label>
+                                                   <textarea class="form-control" id="direccion" name="direccion" rows="3" required ></textarea>
+                                               </div>
+                                               <div class="mb-3">
+                                                   <label for="producto" class="form-label">Producto</label>
+                                                   <select class="form-select" id="producto" name="producto" required>
+                                                       <option value="" selected>Seleccionar producto...</option>
+                                                       <option value="casa">Casa</option>
+                                                       <option value="apartamento">Apartamento</option>
+                                                       <option value="terreno">Terreno</option>
+                                                   </select>
+                                               </div>
+                                               <div class="mb-3">
+                                                   <label for="numero-tarjeta" class="form-label">Número de Tarjeta</label>
+                                                   <input type="text" class="form-control" id="numero-tarjeta" pattern="[0-9]{16}" required>
+                                                   <small class="form-text text-muted">Número ficticio: 1234 5678 9012 3456</small>
+                                                 </div>
+                                                 <div class="mb-3">
+                                                   <label for="caducidad" class="form-label">Fecha de Caducidad</label>
+                                                   <input type="month" class="form-control" id="caducidad" required>
+                                                 </div>
+                                                 <div class="mb-3">
+                                                   <label for="cvv" class="form-label">CVV</label>
+                                                   <input type="text" class="form-control" id="cvv" pattern="[0-9]{3}" required>
+                                                 </div>
+                                                 <button type="submit" class="btn btn-primary">Realizar Compra</button>
+                                             </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="post-3">
+    <div class="container mt-4">
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="Img/post3.jpeg" width="100%" alt="Imagen de la tarjeta" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Casa Rústica en Valle Verde</h5>
+                        <p class="card-text"><small class="text-muted">Última actualización hace 3
+                            minutos</small>
+                        <p class="card-text">Encantadora casa rústica de 2 dormitorios y 1 baño, rodeadas
+                            de naturaleza.<br>
+                            Techos con vigas de madera,chimenea de piedra y un gran terreno <br> con 
+                            posibilidades de expansión.
+                        </p>
+                       </p>
+                       <!-- Button trigger modal 3.1 Card 1 -->
+                       <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                       data-bs-target="#modal7">
+                       Ver detalles</button>
+
+                         <!-- Modal 2.1 Card 1-->
+                         <div class="modal fade" id="modal7" data-bs-backdrop="static"
+                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                         aria-hidden="true">
+                         <div class="modal-dialog">
+                             <div class="modal-content">
+                                 <div class="modal-header">
+                                     <h5 class="modal-title" id="staticBackdropLabel">Casa Rústica en Valle Verde</h5>
+                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                         aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                     <p><b>Ubicación:</b>, Cartago, Costa Rica.</p>
+                                     <p><b>Descripción:</b> Impactante casa de diseño contemporáneo con vistas panorámicas a la ciudad y las montañas. Cocina gourmet con electrodomésticos de última generación y barra de desayuno. Amplios ventanales que permiten la entrada de luz natural. Suite principal con baño de lujo y acceso directo a la terraza. Piscina infinita en el patio con área de entretenimiento cubierta. Sistema de automatización del hogar. Garaje para 3 automóviles.</p>
+                                     <p><b>Tamaño del Terreno:</b> 1600 m²</p>
+                                     <p><b>Tamaño de la Casa:</b> 620 m²</p>
+                                     <p><b>Precio de venta:</b> $580,000.</p>
+                                     <p><b>Fecha de venta:</b> 28 de febreo de 2022.</p>
+                                 </div>
+                                 <div class="modal-footer">
+                                     <button type="button" class="btn btn-secondary"
+                                         data-bs-dismiss="modal">Close</button>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     
+                     <!-- Codigo del modal descripcion del vendedor -->
+                      <!-- Button trigger modal 2  Card 1-->
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#modal8">
+                      Vendedor
+                  </button>
+                  <!-- Modal 2 Card 1-->
+                  <div class="modal fade" id="modal8" data-bs-backdrop="static"
+                      data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Vendedor</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                      aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <p><b>Nombre:</b> Daniel Ramirez.</p>
+                                  <p><b>Experiencia:</b> 8 años en el sector inmobiliario.</p>
+                                  <p><b>Especialización:</b>  Propiedades rurales y terrenos para desarrollo.</p>
+                                  <p><b>Características destacadas:</b>  Amplia red de contactos en la industria de la construcción y desarrollo, lo que le permite ofrecer oportunidades únicas a sus clientes.</p>
+                                  <p><b>Contacto:</b> +(506) 451-8325</p>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary"
+                                      data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Modal de compra post-2 -->
+                    <!-- Button trigger modal 3 Card 1 -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#modal9">
+                    Comprar
+                </button>
+                <!-- Modal 3 Card 1-->
+                <div class="modal fade" id="modal9" data-bs-backdrop="static"
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Comprar Propiedad</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                               <div class="row">
+                                   <label for="direccion" class="form-label">Datos Personales:</label>
+                                   <div class="col">
+                                     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                   </div>
+                                   <div class="col">
+                                     <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                   </div>
+                                   <div class="row">
+                                       <input type="email" class="form-control" placeholder="email@example.com" aria-label="Last name">
+                                   </div>
+                                   <div class="mb-3">
+                                       <label for="direccion" class="form-label">Dirección</label>
+                                       <textarea class="form-control" id="direccion" name="direccion" rows="3" required ></textarea>
+                                   </div>
+                                   <div class="mb-3">
+                                       <label for="producto" class="form-label">Producto</label>
+                                       <select class="form-select" id="producto" name="producto" required>
+                                           <option value="" selected>Seleccionar producto...</option>
+                                           <option value="casa">Casa</option>
+                                           <option value="apartamento">Apartamento</option>
+                                           <option value="terreno">Terreno</option>
+                                       </select>
+                                   </div>
+                                   <div class="mb-3">
+                                       <label for="numero-tarjeta" class="form-label">Número de Tarjeta</label>
+                                       <input type="text" class="form-control" id="numero-tarjeta" pattern="[0-9]{16}" required>
+                                       <small class="form-text text-muted">Número ficticio: 1234 5678 9012 3456</small>
+                                     </div>
+                                     <div class="mb-3">
+                                       <label for="caducidad" class="form-label">Fecha de Caducidad</label>
+                                       <input type="month" class="form-control" id="caducidad" required>
+                                     </div>
+                                     <div class="mb-3">
+                                       <label for="cvv" class="form-label">CVV</label>
+                                       <input type="text" class="form-control" id="cvv" pattern="[0-9]{3}" required>
+                                     </div>
+                                     <button type="submit" class="btn btn-primary">Realizar Compra</button>
+                                 </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+            
+      </aside>
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+        <section class="conten-redes">
+            <h4>Redes Sociales</h4>
+            <div class="redes">
+                <a href="#"><span>Facebook</span></a>
+                <a href="#"><span>Twitter</span></a>
+                <a href="#"><span>YouTube</span></a>
+                <a href="#"><span>Instagram</span></a>
+                <a href="#"><span>Tik Tok</span></a>
+            </div>
+            <p>&copy; 2023 Casas Express R&R. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+<script src="js/local_storage.js"></script>
+</html>
